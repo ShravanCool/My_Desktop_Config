@@ -9,4 +9,25 @@ This repository contains dotfiles of my development environment. While there are
 - Bash or zsh (I used both of them interchangeably)
 - i3 WM, a tiling window manager
 
+## Setting up the environment-
+
+- Prior to the installation, make sure you have committed the alias to your .bashrc or .zsh-
+    ```
+    alias config='/usr/bin/config' --git-dir=$HOME/.cfg/ --worktree=$HOME'
+    ```
+- To ensure that your source repository doesn't create weird recursion problems,
+    ```
+    echo ".cfg" >> .gitignore
+    ```
+- Now, clone the dotfiles onto a bare repository in the *"dot"* forlder of your $HOME-
+```
+git clone --bare <git-repo-url> $HOME/.cfg
+```
+- Define the alias in your current shell scope-
+```
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+```
+
+In case of any problems, check out this [reference](https://www.atlassian.com/git/tutorials/dotfiles).
+
 
