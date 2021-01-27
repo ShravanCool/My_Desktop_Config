@@ -1,6 +1,6 @@
 # My Desktop Configuration
 
-This repository contains dotfiles of my development environment. While there are steps mentioned for installing and setting up the same, it's really intented for my own use- you probably won't have much success with it, and would probably be better of reading the individual dotfiles and copying the bits that interest you.
+This repository contains dotfiles of my development environment. While there are steps mentioned for installing and setting up the same, it's really intented for my own use- you probably won't have much success with it, and would probably be better off reading the individual dotfiles and copying the bits that interest you.
 
 ## Development tools used-
 
