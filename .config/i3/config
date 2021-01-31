@@ -150,7 +150,7 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: "
 set $ws10 "10"
 
 # switch to workspace
@@ -188,6 +188,7 @@ bindsym $mod+shift+x exec i3lock --color "$base01"
 
 assign [class="Firefox" instance="Navigator"] $ws2 
 assign [class="Google-chrome"] $ws3
+assign [class="Microsoft Teams - Preview"] $ws9
 
 # shut down / restart / suspend...
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Ctrl+s) shutdown
