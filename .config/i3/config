@@ -145,7 +145,7 @@ bindsym $mod+minus scratchpad show
 set $ws1 "1: " 
 set $ws2 "2:  " 
 set $ws3 "3: " 
-set $ws4 "4"
+set $ws4 "4: "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -189,6 +189,10 @@ bindsym $mod+shift+x exec i3lock --color "$base01"
 assign [class="Firefox" instance="Navigator"] $ws2 
 assign [class="Google-chrome"] $ws3
 assign [class="Microsoft Teams - Preview"] $ws9
+assign [class="(?i)libreoffice-writer$"]$ ws4
+assign [class="(?i)soffice"] $ws4
+assign [class="(?i)libreoffice-calc"] $ws4
+assign [class="(?i)libreoffice.*"] $ws4
 
 # shut down / restart / suspend...
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Ctrl+s) shutdown
