@@ -77,6 +77,9 @@ nnoremap <Leader>f :NERDTreeToggle<CR>
 " Close vim if only window open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Aumatically reload files
+set autoread
+
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
