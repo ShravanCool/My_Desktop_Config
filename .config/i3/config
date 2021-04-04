@@ -40,6 +40,7 @@ font pango:System San Fransisco Display 10
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock $HOME/.config/i3/scripts/lock.sh
 
 # swap caps lock and escape
 #exec_always --no-startup-id xmodmap -e "clear lock"
