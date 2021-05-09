@@ -258,6 +258,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+gaps inner 10
+gaps outer 10
+smart_gaps on
+
 #set $bg-color #2F343F
 #set $inactive-bg-color #2F343F
 #set $text-color #F3F4F5
@@ -289,13 +293,15 @@ bar {
     }
 }
 
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 # floating pop up automatically
 for_window [window_role="pop_up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
 
 # Wallpaper zone
-exec_always feh --bg-scale /home/shravanaj/Pictures/clark-tibbs-oqStl2L5oxI-unsplash.jpg
+exec_always feh --bg-scale /home/shravanaj/Pictures/joe-yates-Cc4sToR2Oc0-unsplash.jpg
 
 # Opacity effects
 exec_always compton -f
