@@ -21,7 +21,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 " Color Themes
-" Plug 'tomasr/molokai'
+Plug 'tomasr/molokai'
 " Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
 " Nerdtree - file explorer
@@ -125,6 +125,16 @@ endfunc
 
 command! ColorColumnToggle call ToggleColorColumn()
 
+function ToggleColorBackground()
+    if (&background == "light")
+        set background=dark
+    else
+        set background=light
+    endif
+endfunc
+
+command! ColorBackgroundToggle call ToggleColorBackground()
+
 " =================================================================================
 
 " Always show the status line at the bottom, even if you only have one window open.
@@ -202,6 +212,7 @@ nnoremap <C-h> <C-w>h
 
 nnoremap <Leader>ol :ColorColumnToggle<CR>
 nnoremap <Leader>on :LineNumberToggle<CR>
+nnoremap <Leader>oc :ColorBackgroundToggle<CR>
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
